@@ -66,7 +66,7 @@ class Woocommerce_Last_Purchased{
 	}
 
 	/**
-	 * Main WooCommerce Last Purchased Instance
+	 * Main WooCommerce_Last_Purchased Instance
 	 *
 	 * Ensures only one instance of WooCommerce Last Purchased
 	 * is loaded or can be loaded.
