@@ -44,8 +44,6 @@ class Woocommerce_Last_Purchased{
 		$this->_timeago_locale_file_url =  plugin_dir_url( __FILE__ ) . 'vendor/timeago/locales/jquery.timeago.' . $this->get_language() . '.js';
 		$this->_timeago_locale_file =  plugin_dir_path( __FILE__ ) . 'vendor/timeago/locales/jquery.timeago.' . $this->get_language() . '.js';
 
-		__("This is a WooCommerce extension to show last purchased date popup on product page.");
-
     }
 
 	private function init_hooks(){
@@ -319,5 +317,5 @@ function WLP() {
 // Global for backwards compatibility.
 $GLOBALS['WLP'] = WLP();
 
-
-
+// Allow plugin description to be translatable
+$plugin_description = __("This is a WooCommerce extension to show last purchased date popup on product page.");
